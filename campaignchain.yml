@@ -1,0 +1,6 @@
+modules:
+    campaignchain-salesforce-user:
+        display_name: Salesforce
+        description: Salesforce locations
+        hooks:
+            default:
