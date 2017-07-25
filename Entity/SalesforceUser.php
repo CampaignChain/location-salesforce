@@ -33,7 +33,7 @@ class SalesforceUser
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $pictureUrl;
 
@@ -43,12 +43,12 @@ class SalesforceUser
     protected $profileUrl;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $phoneNumber;
 
     /**
-     * @ORM\Column(type="bool")
+     * @ORM\Column(type="boolean")
      */
     protected $phoneNumberVerified;
 
@@ -73,7 +73,7 @@ class SalesforceUser
     protected $lastName;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
     protected $email;
 
@@ -83,17 +83,17 @@ class SalesforceUser
     protected $organizationId;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $nickname;
 
     /**
-     * @ORM\Column(type="bool")
+     * @ORM\Column(type="boolean", nullable=true)
      */
     protected $emailVerified;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $zoneinfo;
 
