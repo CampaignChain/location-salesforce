@@ -98,6 +98,11 @@ class SalesforceUser
     protected $zoneinfo;
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    protected $isSandbox = false;
+
+    /**
      * Get id
      *
      * @return integer
@@ -348,5 +353,21 @@ class SalesforceUser
     public function setPhoneNumberVerified($phoneNumberVerified)
     {
         $this->phoneNumberVerified = $phoneNumberVerified;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIsSandbox()
+    {
+        return $this->isSandbox;
+    }
+
+    /**
+     * @param mixed $isSandbox
+     */
+    public function setIsSandbox($isSandbox)
+    {
+        $this->isSandbox = $isSandbox;
     }
 }
