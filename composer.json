@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "campaignchain/channel-salesforce": "dev-master"
+        "campaignchain/channel-salesforce": "1.0.x-dev"
     },
     "autoload": {
         "psr-4": { "CampaignChain\\Location\\SalesforceBundle\\": "" }
